@@ -1,0 +1,41 @@
+<h1 class="text-center logo-name"><img src = "/styles/logo.png" class="logo"> Audio Journal</h1>
+
+<h1 class="page-title">{{data1.dataValues.name}}</h1>
+
+<div class="grid-container" id="table">
+    <div class="grid-x grid-margin-x">
+        <div class="medium-2 cell"></div>
+        <div class="medium-3 cell">
+            <a class="button" id="u-button" href="/new">Create New Post</a>
+        </div>
+        <div class="medium-2 cell"></div>
+        <div class="medium-3 cell">
+            <a class="button" id="u-button" href="/home">Home</a>
+        </div>
+        <div class="medium-1 cell"></div>
+    </div>
+    <div class="grid-x grid-margin-x">
+        <div class="medium-2 cell"></div>
+        <div class="medium-8 cell align-center">
+            <div class="table-scroll align-center">
+                <table class="scroll hover t-user" id="table2">
+                    <thead>
+                        <tr>
+                          <th width="240">Your Posts</th>
+                          <th width="440">Post</th>
+                          <th width="190">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody class="user-table">
+                    <tr>{{#each data1.Posts}}</tr>
+                            <td>{{this.dataValues.title}}</td>
+                            <td>{{this.dataValues.body}}</td>
+                            <td>{{moment date=this.dataValues.createdAt format="MMMM DD, YYYY"}}</td>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="medium-2 cell"></div>
+    </div>
+</div>

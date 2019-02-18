@@ -1,0 +1,43 @@
+<h1 class="text-center logo-name"><img src = "/styles/logo.png" class="logo"> Audio Journal</h1>
+<h2 class="page-title">Recent Posts</h2>
+
+<div class="grid-container" id="table">
+    <div class="grid-x grid-margin-x">
+        <div class="medium-1 cell"></div>
+        <div class="medium-10 cell align-center">
+            <div class="table-scroll align-center">
+                <table class="scroll hover t-user" id="table1">
+                    <thead>
+                        <tr>
+                          <th width="200">User</th>
+                          <th width="200">Title</th>
+                          <th width="440">Post</th>
+                          <th width="190">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    <tr>{{#each test}}</tr>
+                            <td>{{this.User.name}}</td>
+                            <td>{{this.title}}</td>
+                            <td>{{this.body}}</td>
+                            <td>{{moment date=this.createdAt format="MMMM DD, YYYY"}}</td>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="medium-1 cell"></div>
+    </div>
+</div>
+{{!-- <ul>
+          {{#each poop}}
+              <li>{{this.title}}</li>
+          {{/each}}
+ </ul>
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">
+        {{this.msg}}
+    </div>
+    {{/each}}
+{{/if}} --}}

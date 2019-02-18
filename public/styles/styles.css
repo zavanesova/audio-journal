@@ -1,0 +1,71 @@
+.list-group-item {
+  line-height: 2.5;
+}
+html{
+  height: 150%;
+}
+body{
+  width: 100%;
+  background: linear-gradient(to top, black, #85bae2, white);
+}
+.logo-name{
+  padding: 25px 0px 45px 0px;
+  font-family: 'Staatliches', cursive;
+  color: #696b75;
+  opacity: .8;
+  font-size: 70px;
+
+}
+.page-title{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #696b75;
+  padding-left: 75px;
+}
+.modal-title{
+  font-size: 25px;
+  color: black;
+  opacity: .5;
+  font-family: 'Open Sans', sans-serif;
+}
+#modal1,
+#modal2,
+#modal3{
+  border-radius: 25px;
+  border-color: rgba(136,136,136, .35);
+  padding: 40px;
+  background-color:	rgba(136,136,136, .35);
+}
+.button{
+  border-radius: 18px;
+  background-color:	rgba(136,136,136);
+  font-family: 'Open Sans', sans-serif;
+}
+#login{
+  position: relative;
+  margin-left: 0px;
+  width: 47%;
+}
+#sign-up{
+  position: relative;
+  margin-left: 22px;
+  width: 47%;
+}
+.t-user{
+  border-radius: 18px;
+  opacity: .4;
+}
+#u-button{
+  width: 97%;
+}
+#post-div{
+  background-color: white;
+  opacity: .6;
+  border-radius: 18px;
+}
+.post-title{
+  font-size: 25px;
+}
+.date{
+  padding-top: 50px;
+  font-size: 15px;
+}
