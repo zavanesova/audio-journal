@@ -170,25 +170,12 @@ $(document).ready(function() {
     // console.log($(this).children()[0].innerHTML);
     console.log("hello");
   });
-  // function viewPost() {
-  //   var chosenPost = {};
-  //   $("#table1 tr").on("click", function() {
-  //     chosenPost = {
-  //       name: $(this).children()[0].innerHTML,
-  //       title: $(this).children()[1].innerHTML,
-  //       post: $(this).children()[2].innerHTML,
-  //       date: $(this).children()[3].innerHTML
-  //     };
-  //     console.log("name", $(this).children()[0].innerHTML);
-  //     console.log("title", $(this).children()[1].innerHTML);
-  //     console.log("post", $(this).children()[2].innerHTML);
-  //     console.log("date", $(this).children()[3].innerHTML);
-  //     // console.log($(this).children()[1].html());
-  //     // console.log($(this).children($(".name")).html());
-  //     // console.log($(this).children($(".title")).html());
-  //     $(".chosen-post").text(chosenPost.name);
-  //     window.location.href = "/post"\
-  //   });
-  // }
-  // viewPost();
+
+  function animate() {
+    $(".page-title").hover(function() {
+      $(this).addClass("animated fadeIn");
+    })
+      $(".page-title").removeClass("animated fadeIn");
+  };
+  animate();
 });
